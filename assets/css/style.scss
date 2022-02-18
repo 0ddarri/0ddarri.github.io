@@ -19,12 +19,12 @@
 
 a.navbar-item:hover,
 .navbar-link:hover {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    background-color: rgba($color: #fff, $alpha: 0.15) !important; // 상단 바 마우스 올렸을 때 색상
     color: white !important;
 }
 
 a.navbar-item.is-active {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    background-color: rgba($color: #fff, $alpha: 0.25) !important; // 상단 바 선택한거 색상
     color: white !important;
 
     &:hover {
@@ -65,10 +65,23 @@ a.navbar-item.is-active {
     margin: auto 0.75rem!important;
 }
 .subtitle {
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.3rem; // 부제 자간
 }
 
 #about {
+    #about-explain
+    {
+        font-size: 40px;
+    }
+    #about-skill
+    {
+        font-size: 30px;
+    }
+    #about-skill-left-margin
+    {
+        font-size: 30px;
+        margin-left: 10px;
+    }
     .image {
         max-width: 20vmax;
         margin: auto;
@@ -85,8 +98,14 @@ a.navbar-item.is-active {
 }
 
 #contact {
+    #contact-title
+    {
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+
     #contact-button {
-        margin: 0.5rem auto;
+        margin: 0.5rem auto; // 메신저 이메일 트위터 버튼 사이 간격
         display: flex;
         justify-content: center;
     }
@@ -258,6 +277,14 @@ a.navbar-item.is-active {
 }
 
 #project {
+    #project-title
+    {
+        font-size: 50px;
+    }
+    #project-line
+    {
+        margin-bottom: 30px;
+    }
     .columns {
         .column {
             border-radius: 0.5rem;

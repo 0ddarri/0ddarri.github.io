@@ -4,7 +4,6 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-
 <head>
     {% include head.html %}
 </head>
@@ -17,8 +16,12 @@ layout: compress
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="section">
-                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">My Portfolio</p> <!--포폴 타이틀-->
+                    <p class="title is-uppercase has-text-weight-medium has-text-black" id="project-title">My Projects</p> <!--포폴 타이틀-->
                 </div>
+                <h2 class="subtitle">
+                    The projects that I participated
+                </h2>
+                <hr id="project-line">
                 {% include project-card.html %}
             </div>
         </div>
